@@ -1,38 +1,39 @@
-# Ê¹ÓÃËµÃ÷
+# ä½¿ç”¨è¯´æ˜
 
 
-## Ç°ÖÃ
+## å‰ç½®
 
-ĞèÒªÔÚubuntuÖĞ°²×°Arduino 1.8.x°æ±¾£¬²¢ÅäÖÃºÃ¶Ë¿ÚºÅ£¬¿ª·¢°å¹¤¾ß¿â(Ñ¡ÔñAI-Thinker Esp32-Cam)£¬È»ºóÔÚÏîÄ¿/¼ÓÔØ¿âÖĞµ¼ÈëdataÖĞµÄpubsubclientÑ¹Ëõ°ü£¬×îºóÔÚ¼ÓÔØ¿â/¹ÜÀí¿âÖĞËÑË÷PubSubClient£¬²¢°²×°¡£
-## ²ÎÊıÅäÖÃËµÃ÷
-//ssidÎªWIFIÕË»§Ãû³Æ
+éœ€è¦åœ¨ubuntuä¸­å®‰è£…Arduino 1.8.xç‰ˆæœ¬ï¼Œå¹¶é…ç½®å¥½ç«¯å£å·ï¼Œå¼€å‘æ¿å·¥å…·åº“(é€‰æ‹©AI-Thinker Esp32-Cam)ï¼Œç„¶ååœ¨é¡¹ç›®/åŠ è½½åº“ä¸­å¯¼å…¥dataä¸­çš„pubsubclientå‹ç¼©åŒ…ï¼Œæœ€ååœ¨åŠ è½½åº“/ç®¡ç†åº“ä¸­æœç´¢PubSubClientï¼Œå¹¶å®‰è£…ã€‚
+## å‚æ•°é…ç½®è¯´æ˜
+//ssidä¸ºWIFIè´¦æˆ·åç§°
 
 const char* ssid = "***";
 
-//passwordÎªWIFIÃÜÂë
+//passwordä¸ºWIFIå¯†ç 
 
 const char* password = "***";
 
-//mqtt_serverÎªemqx·şÎñÆ÷µØÖ·
+//mqtt_serverä¸ºemqxæœåŠ¡å™¨åœ°å€
 
 const char* mqtt_server = "***";
 
-//mqtt_portÎªemqx·şÎñÆ÷¶Ë¿Ú(Ä¬ÈÏ1883)
+//mqtt_portä¸ºemqxæœåŠ¡å™¨ç«¯å£(é»˜è®¤1883)
 
 const int mqtt_port = 1883;
 
-//mqttUserÎªemqxÓÃ»§Ãû(Ä¬ÈÏadmin)
+//mqttUserä¸ºemqxç”¨æˆ·å(é»˜è®¤admin)
 
 const char* mqttUser = "admin"; 
 
-//mqttPasswordÎªemqxÃÜÂë(Ä¬ÈÏpublic)
+//mqttPasswordä¸ºemqxå¯†ç (é»˜è®¤public)
 
 const char* mqttPassword = "public"; 
 
-//mqtt_topicÎª¶©ÔÄµÄÖ÷Ìâ
+//mqtt_topicä¸ºè®¢é˜…çš„ä¸»é¢˜
 
-const char* mqtt_topic = "picture"; // ¶¨ÒåÓÃÓÚ·¢²¼Í¼ÏñµÄ MQTT Ö÷Ìâ
+const char* mqtt_topic = "picture"; // å®šä¹‰ç”¨äºå‘å¸ƒå›¾åƒçš„ MQTT ä¸»é¢˜
 
-## ÔËĞĞ
+## è¿è¡Œ
 
-Ò»ÇĞÅäÖÃ¾ÍĞ÷£¬µã»÷ÉÏ´«£¬³É¹¦ºó¼´¿ÉÔËĞĞ
+ä¸€åˆ‡é…ç½®å°±ç»ªï¼Œç‚¹å‡»ä¸Šä¼ ï¼ŒæˆåŠŸåå³å¯è¿è¡Œ
+æ³¨æ„ï¼šå‘é€åˆ°emqxä¸Šçš„æ•°æ®æ˜¯ç»è¿‡base64åŠ å¯†çš„ï¼Œå› æ­¤ï¼Œè¦æ˜¾ç¤ºåŸå›¾ç‰‡éœ€è¦å…ˆè¿›è¡ŒBase64è§£å¯†ã€‚å¯è‡ªè¡Œé€šè¿‡java/pythonæˆ–å…¶ä»–è¯­è¨€å®ç°ï¼
